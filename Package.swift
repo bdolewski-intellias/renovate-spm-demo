@@ -11,8 +11,7 @@ let package = Package(
             targets: ["renovate-spm-demo"]),
     ],
     dependencies: [
-            .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "1.7.3"),
-            .package(url: "https://github.com/bdolewski-intellias/renovate-spm-dependency", exact: "1.0.0"),
+            .package(url: "https://github.com/bdolewski-intellias/renovate-spm-dependency", .upToNextMajor(from: "1.0.0")),
         ],
     targets: [
         .target(
